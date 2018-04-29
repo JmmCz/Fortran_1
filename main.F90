@@ -37,7 +37,14 @@ program main
     call gauss(A, X, N-1) 
 
     write (*, *) X
-
+    
+    do i=1, N
+        err = err + abs(x(i) - real(i)/real(N))
+    end do
+    
+    write (*, *) "Error:"
+    write (*, *) err
+    
     deallocate(A)
     deallocate(X)
 
