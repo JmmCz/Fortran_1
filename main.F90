@@ -5,8 +5,8 @@ program main
     implicit none
     
     integer (kind = 4) :: i, N
-    real (kind = 4), allocatable :: A(:,:), X(:)
-    real (kind = 4) :: h, err
+    real (kind = 4), allocatable :: A(:,:), X(:)        !here changed kind
+    real (kind = 4) :: h, err                           !here changed kind 
 
     write(*,*) "Please, type N:"
 
