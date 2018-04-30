@@ -7,9 +7,9 @@ module gauss_method
     subroutine gauss(A, X, N)
 
         integer (kind = 4), intent(in) :: N
-        real (kind = 4), intent(out) :: A(N,N), X(N)
+        real (kind = 4), intent(out) :: A(N,N), X(N)    !here changed kind
         integer (kind = 4) :: i, j
-        real (kind = 4) :: c
+        real (kind = 4) :: c                            !here changed kind
 
         do i=1, N
             do j=0, N
